@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'Cairo';
+  src:
+    url('../font/Cairo-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+header {
+  width: 7%;
+  height: 100vh;
+  background: #2a2a2a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.dark {
+  margin: 0;
+  padding: 11px 14px;
+  background: white;
+  color: black;
+  border-radius: 50px;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  border: none;
+}
+
+nav {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 70%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background: rgba(253, 253, 253, 0.1);
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/*******************************/
+.app {
+  padding: 20px;
+  width: 93%;
+  height: 100vh;
+}
+
+.app .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 10px;
+  margin: 16px;
+  margin-top: 2%;
+}
+
+.app .card-style {
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+
+.app .cards .add {
+  display: grid;
+  place-items: center;
+}
+
+.app .cards .plus {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.app .cards .add i {
+  font-size: 30px;
+  cursor: pointer;
+  color: #000;
+}
+
+.app .cards h4 {
+  margin-top: 10px;
+}
+
+.app .cards .card .card_content {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.app .cards .card .card_content h4 {
+  margin-bottom: 10px;
+}
+
+.app .cards .card .card_content p {
+  font-size: 15px;
+}
+
+/***************************/
+.app .cards .card .card_details {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid whitesmoke;
+  margin: 0;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.app .cards .card .card_details>span {
+  font-size: 12px;
+}
+
+.app .cards .card .card_details .menu-app {
+  position: relative;
+}
+
+.app .cards .card .card_details .menu-app>i {
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.app .cards .card .card_details .menu-app .menu {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  width: 100px;
+  border-radius: 4px;
+  left: auto;
+  top: auto;
+  z-index: 6;
+  transform: scale(0);
+  transition: all 200ms linear;
+}
+
+.app .cards .card .card_details .menu-app:hover .menu {
+  transform: scale(1);
+}
+
+.app .cards .card .card_details .menu-app .menu li {
+  cursor: pointer;
+  margin-top: 5px;
+  padding: 5px 10px;
+  transition: all 200ms linear;
+}
+
+.app .cards .card .card_details .menu-app .menu li:hover {
+  background-color: #1e1e1e;
+}
+
+/* ********************** */
+.popup-app {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 999;
+  display: none;
+}
+
+.popup-app.open {
+  display: grid;
+}
+
+.popup-app .popup {
+  background-color: #2a2a2a;
+  width: 340px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.popup-app .popup .header_popup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-app .popup .header_popup i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-app .popup form {
+  margin: 15px 0px;
+}
+
+.popup-app .popup form>div {
+  margin: 15px 0px;
+}
+
+.popup-app .popup form>div :where(input, textarea) {
+  display: block;
+  width: 100%;
+  outline-width: 0;
+  padding: 7px;
+  background-color: initial;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  color: var(--secondColor);
+}
+
+.popup-app .popup form>div textarea {
+  resize: none;
+  height: 120px;
+}
+
+.popup-app .popup form>button {
+  width: 100%;
+  padding: 10px 0px;
+  border-width: 0;
+  background-color: rgba(253, 253, 253, 0.1);
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Global*/
+li {
+  list-style: none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/icon.jpg" />
+  <title>To-Do List</title>
+
+  <link rel="stylesheet" href="css/list.css">
+  <link rel="stylesheet" href="css/all.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <button class="dark" id="darkModeToggle"><i class="fa fa-moon"></i></button>
+    <nav>
+      <a href="anki.html">Decks</a>
+      <a href="Timer.html">Timer</a>
+      <a href="noty.html">Noty</a>
+      <a href="list.html">List</a>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <div class="todo-form">
+      <button class="btnAdd" onclick="addTask()">Add List</button>
+      <input type="text" id="task-input" placeholder="Enter a New List....." />
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="list.js"></script>
+</body>
+
+</html>

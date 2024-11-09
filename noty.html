@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noty | Omar Ahmed</title>
+
+  <link rel="stylesheet" href="css/noty.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="manifest" href="manifest.json" />
+
+<body>
+
+  <header>
+    <button class="dark" id="darkModeToggle"><i class="fa fa-moon"></i></button>
+    <nav>
+      <a href="anki.html">Decks</a>
+      <a href="Timer.html">Timer</a>
+      <a href="noty.html">Noty</a>
+      <a href="list.html">List</a>
+    </nav>
+  </header>
+
+  <main class="app">
+    <div class="cards">
+      <div class="add card-style">
+        <div class="plus">
+          <i class="fa fa-plus"></i>
+        </div>
+        <h4>Add New Noty</h4>
+      </div>
+    </div>
+  </main>
+  <div class="popup-app">
+    <div class="popup">
+      <div class="header_popup">
+        <h4>Add New Noty</h4>
+        <i class="fa fa-x close"></i>
+      </div>
+      <form action="#">
+        <div>
+          <label>
+            Title
+          </label>
+          <input type="text" />
+        </div>
+        <div>
+          <label>Description</label>
+          <textarea></textarea>
+        </div>
+        <button class="button">Add</button>
+      </form>
+    </div>
+  </div>
+  <script src="noty.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

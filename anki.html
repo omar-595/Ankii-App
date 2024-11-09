@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- الأيقونة -->
+    <link rel="icon" href="icon/icon.jpg">
+    <title>Advanced Flashcards - Anki Clone</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+    <!-- الإشارة إلى ملف manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <header>
+        <button class="dark" id="darkModeToggle"><i class="fa fa-moon"></i></button>
+        <nav>
+            <a href="anki.html">Decks</a>
+            <a href="Timer.html">Timer</a>
+            <a href="noty.html">Noty</a>
+            <a href="list.html">List</a>
+        </nav>
+    </header>
+
+    <div id="rewardMessage" style="display:none;">
+        <button id="remove-maseg" onclick="removMas();"><i class="fa fa-x"></i></button>
+        <p>You've completed 20 flashcards! Time to take a break.</p>
+    </div>
+
+    <div class="container">
+        <center>
+            <h1>Flashcards App</h1>
+
+            <!-- Form for adding decks -->
+            <div class="deck-form">
+                <input type="text" id="deckName" placeholder="Enter Deck Name">
+                <button class="addDeac" id="addDeckBtn">Add Deck</button>
+            </div>
+        </center>
+</body>
+
+
+<div id="decksContainer"></div>
+
+<!-- Form for adding flashcards -->
+<div id="flashcard-form" style="display:none;">
+    <h2 id="deckTitle"></h2>
+    <input type="text" id="question" placeholder="Enter question">
+    <input type="text" id="answer" placeholder="Enter answer">
+    <button><label for="media">File</label></button>
+    <input type="file" id="media" accept="image/*,audio/*,video/*" style="display: none;">
+    <button id="addCardBtn">Add Flashcard</button>
+</div>
+
+<div id="flashcards"></div>
+</center>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="css/Timer.css">
+  <link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+</head>
+
+<body>
+  <header>
+    <button class="dark" id="darkModeToggle"><i class="fa fa-moon"></i></button>
+    <nav>
+      <a href="anki.html">Decks</a>
+      <a href="Timer.html">Timer</a>
+      <a href="noty.html">Noty</a>
+      <a href="list.html">List</a>
+    </nav>
+  </header>
+  <center>
+    <!-- Pomodoro Timer -->
+    <div class="pomodoro-timer">
+      <h3>Pomodoro Timer</h3>
+      <label for="workTime">Work Time: </label>
+      <input type="number" id="workTime" value="25">
+      <label for="breakTime">Break Time: </label>
+      <input type="number" id="breakTime" value="5">
+
+      <div class="timer-display">
+        <div class="circle" id="circle">
+          <span id="timeDisplay">25:00</span>
+        </div>
+      </div>
+
+      <button id="startPomodoro">Start</button>
+      <button id="stopPomodoro">Stop</button>
+      <button id="resetPomodoro">Reset</button>
+
+      <p id="pomodoroStatus"></p>
+    </div>
+  </center>
+</body>
+<script src="script.js"></script>
+
+</html>
